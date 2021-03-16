@@ -18,7 +18,7 @@ model_graph = Graph()
 with model_graph.as_default():
     tf_session = tf.compat.v1.Session()
     with tf_session.as_default():
-        model=load_model('./models/fp(15epoch).h5')
+        model=load_model('./models/mixed5.h5')
 
 
 def home(request):
