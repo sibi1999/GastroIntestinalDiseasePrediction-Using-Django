@@ -21,30 +21,42 @@
   <title>GID</title>
 </head>
 
-<body>
 
-  <nav id="topNav" class="navbar navbar-expand-md navbar-light">
+
+  <nav id="topNav" class="navbar navbar-dark bg-primary">
     <div class="container">
       
       
 
-      <a  role="button" class="navbar-brand" href="{% url 'home' %}"" class="btn btn-primary" >Home
+      <a  class="navbar-nav mr-auto" href="{% url 'home' %}"" class="btn btn-primary" >
+        <button type="button" class="btn btn-primary">Home</button>
       </a>
-
-
+      <a  class="navbar-nav ml-auto" href="{% url 'home' %}" c >
+        <button type="button" class="btn btn-primary">About Us</button>
+      </a>
+      <a  class="navbar-nav" href="{% url 'home' %}"  >
+        <button type="button" class="btn btn-primary">Login</button>
+      </a>
+      <!--
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+    
       <div class="collapse navbar-collapse text-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
+        <ul class="">
           
           <li>
             <a role="button" href="#" class="btn btn-primary">About Us</a>
           </li>
         </ul>
       </div>
+      -->
+
+      
     </div>
+  
   </nav>
+  <body>
   <div class="container">
     {% block content %}{% endblock %}
   </div>
