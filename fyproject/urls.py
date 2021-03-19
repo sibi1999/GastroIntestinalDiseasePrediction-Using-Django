@@ -21,10 +21,10 @@ from django.conf.urls.static import  static
 from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
-
+app_name="imageprocessor"
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',v1.home,name='home'),
+    #path('',v1.home,name='home'),
     path('accounts/', include('accounts.urls')),
     path('check/',views.home,name='home'),
     path('check/predictimage',views.predictimage,name='predictimage')
