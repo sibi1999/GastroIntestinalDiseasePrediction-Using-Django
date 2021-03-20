@@ -9,6 +9,7 @@ from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
     path('signup/',views.signup_view,name="signup_view"),
+    path('login/',views.login_view,name="login_view"),
    
 ]
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

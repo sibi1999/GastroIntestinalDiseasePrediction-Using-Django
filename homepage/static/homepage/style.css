@@ -6,7 +6,7 @@ body
     
     background: url('/static/homepage/doc.jpg' );
     background-repeat:no-repeat;
-    background-size:100%;
+    background-size:cover;
 }
 .ml10 {
     position: relative;
